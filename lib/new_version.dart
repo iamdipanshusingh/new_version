@@ -209,7 +209,7 @@ class NewVersion {
   /// To change the appearance and behavior of the update dialog, you can
   /// optionally provide [dialogTitle], [dialogText], [updateButtonText],
   /// [dismissButtonText], and [dismissAction] parameters.
-  void showUpdateDialog({
+  Future<void> showUpdateDialog({
     required BuildContext context,
     required VersionStatus versionStatus,
     String dialogTitle = 'Update Available',
